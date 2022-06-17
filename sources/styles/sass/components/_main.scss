@@ -1,0 +1,157 @@
+.container--global{
+  display: grid;
+  max-width: 800rem;
+  max-height: 95vh;
+  
+ position: relative;
+
+  background-color: rgba(0, 0, 0, 0.464);
+  backdrop-filter: blur(100px);
+  
+  border-radius: 15px;
+
+
+  .container--players-flex{
+    display: flex;
+    
+    align-items: center;
+    width: 100%;
+    height: 100%;
+    
+
+    .container--players{
+      padding: 8rem 9rem; 
+      width: 50rem;
+      
+
+      .players{
+        font-size: 3.6rem;
+        margin-bottom: clamp(1rem, 50%, 3rem);
+        text-align: center;
+      }
+
+      .full-score{
+
+        font-size: 5.2rem;
+        margin-bottom: clamp(2rem,50%,10rem);
+        text-align: center;
+      }
+
+
+      .container--current-score{
+        display: grid;
+        background-color: rgba(255, 255, 255, 0.667);
+        border-radius: 10px;
+        padding: 1rem;
+        line-height: 4rem;
+        font-size: 2.8rem;
+        text-align: center;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+        
+      }
+    }
+
+    .active-PLayer{
+      backdrop-filter: blur(50px);
+      background-color: rgba(245, 243, 243, 0.79);
+     
+      
+      .container--current-score{
+        box-shadow: 0px 10px 15px 0px rgba(0, 0, 0, 0.418);
+      }
+    }
+    
+    .active-PLayer.container--player02{
+      border-radius: 0 15px 15px 0;
+    }
+    
+    .active-PLayer.container--player01{
+      border-radius: 15px 0 0 15px;
+    }
+
+
+  }
+
+
+  .middle-btns-and-dice{
+
+    position: absolute;
+
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%,-50%);
+
+    display: grid;
+    row-gap: 1.5rem;
+
+    height: 100%;
+    align-items: center;
+    justify-items: center;
+
+    .btn{
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      column-gap: 1rem;
+      font-size: 1.6rem;
+      width: fit-content;
+      border-radius: 10px;
+      padding: 1rem;
+
+      background-color: rgba(222, 221, 221, 0.548);
+      backdrop-filter: blur(20px);
+
+      border: none;
+      outline: none;
+
+      box-shadow: 0 10px 20px 2px rgba(0, 0, 0, 0.234);
+      
+
+      &:hover{
+        cursor: pointer;
+        transform: perspective(20px) translateZ(.75px);
+
+      }
+
+      &:active{
+        cursor: grab;
+        transform: perspective(20px) translateZ(.25px);
+      }
+      .svg{
+        svg{
+          width: 3rem;
+          height: 3rem;
+        }
+      }
+    }
+
+    .container--the-dice{
+      
+      .all-dices{
+
+        svg{
+          width: 8rem;
+          height: 8rem;
+          
+          background-color: black;
+          border-radius: 20px;
+  
+          path{
+            fill: rgb(238, 231, 231);
+          }
+        }
+      }
+      
+    }
+
+    
+
+  }
+  
+
+}
+
+

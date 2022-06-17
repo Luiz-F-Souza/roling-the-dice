@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JOGAR: Juntar Pontos</title>
+
+  <link rel="stylesheet" href="sources/styles/css/index.css">
+</head>
+
+
+<body>
+
+
+  <span>
+    <p>Multiplicador: X<span class="multiplier--text">1</span></p>
+  </span>
+
+  <main class="container--global">
+
+
+
+    <div class="container--players-flex">
+
+      <article class="active-PLayer container--players container--player01">
+
+        <h3 class="players player01">
+          Jogador 1
+        </h3>
+
+        <p class="full-score01 full-score">
+          0
+        </p>
+
+        <article class="container--current-score">
+          <p class="text--current-score">Em jogo</p>
+          <p class="current-score current-score01">0</p>
+        </article>
+
+      </article>
+
+
+      <article class="container--players container--player02">
+
+        <h3 class="players player02">
+          Jogador 2
+        </h3>
+
+        <p class="full-score02 full-score">
+          0
+        </p>
+
+        <article class="container--current-score">
+          <p class="text--current-score">Em jogo</p>
+          <p class="current-score02">0</p>
+        </article>
+
+      </article>
+
+    </div>
+
+
+
+    <article class="middle-btns-and-dice">
+
+      <button class="btn container--new-game">
+        <span class="svg svg--refresh"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+            <path fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5"
+              d="M4.75 10.75h-3m12.5-2c0 3-2.798 5.5-6.25 5.5c-3.75 0-6.25-3.5-6.25-3.5v3.5m9.5-9h3m-12.5 2c0-3 2.798-5.5 6.25-5.5c3.75 0 6.25 3.5 6.25 3.5v-3.5" />
+          </svg></span> Novo Jogo
+      </button>
+
+      <div class="container--the-dice">
+
+        <div class="all-dices one">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" preserveAspectRatio="xMidYMid meet"
+            viewBox="0 0 16 16">
+            <path fill="currentColor"
+              d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm5 9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3z" />
+          </svg>
+        </div>
+
+
+        <div class="all-dices two hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+            <path fill="currentColor"
+              d="M0 3a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v10a3 3 0 0 1-3 3H3a3 3 0 0 1-3-3V3zm5.5 1a1.5 1.5 0 1 0-3 0a1.5 1.5 0 0 0 3 0zm6.5 9.5a1.5 1.5 0 1 0 0-3a1.5 1.5 0 0 0 0 3z" />
+          </svg>
+        </div>
+
+
+        <div class="all-dices three hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+            <path fill="currentColor"
+              d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm2.5 4a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0zm8 8a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0zM8 9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3z" />
+          </svg>
+        </div>
+
+        <div class="all-dices four hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+            <path fill="currentColor"
+              d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm1 5.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zm1.5 6.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0zM4 13.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3z" />
+          </svg>
+        </div>
+
+        <div class="all-dices five hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+            <path fill="currentColor"
+              d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm2.5 4a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0zm8 0a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0zM12 13.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zM5.5 12a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0zM8 9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3z" />
+          </svg>
+        </div>
+
+
+        <div class="all-dices six hidden">
+          <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" width="1em" height="1em"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 16 16">
+            <path fill="currentColor"
+              d="M3 0a3 3 0 0 0-3 3v10a3 3 0 0 0 3 3h10a3 3 0 0 0 3-3V3a3 3 0 0 0-3-3H3zm1 5.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zm8 0a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zm1.5 6.5a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0zM12 9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3zM5.5 12a1.5 1.5 0 1 1-3 0a1.5 1.5 0 0 1 3 0zM4 9.5a1.5 1.5 0 1 1 0-3a1.5 1.5 0 0 1 0 3z" />
+          </svg>
+        </div>
+
+
+
+
+      </div>
+
+      <button class="btn container--rolling-the-dice">
+        <span class="svg svg--a-dice"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512">
+            <path fill="currentColor"
+              d="M440.88 129.37L288.16 40.62a64.14 64.14 0 0 0-64.33 0L71.12 129.37a4 4 0 0 0 0 6.9L254 243.85a4 4 0 0 0 4.06 0L440.9 136.27a4 4 0 0 0-.02-6.9ZM256 152c-13.25 0-24-7.16-24-16s10.75-16 24-16s24 7.16 24 16s-10.75 16-24 16Zm-18 118.81L54 163.48a4 4 0 0 0-6 3.46v173.92a48 48 0 0 0 23.84 41.39L234 479.48a4 4 0 0 0 6-3.46V274.27a4 4 0 0 0-2-3.46ZM96 368c-8.84 0-16-10.75-16-24s7.16-24 16-24s16 10.75 16 24s-7.16 24-16 24Zm96-32c-8.84 0-16-10.75-16-24s7.16-24 16-24s16 10.75 16 24s-7.16 24-16 24Zm266-172.49L274 271.56a4 4 0 0 0-2 3.45V476a4 4 0 0 0 6 3.46l162.15-97.23A48 48 0 0 0 464 340.86V167a4 4 0 0 0-6-3.49ZM320 424c-8.84 0-16-10.75-16-24s7.16-24 16-24s16 10.75 16 24s-7.16 24-16 24Zm0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24s16 10.75 16 24s-7.16 24-16 24Zm96 32c-8.84 0-16-10.75-16-24s7.16-24 16-24s16 10.75 16 24s-7.16 24-16 24Zm0-88c-8.84 0-16-10.75-16-24s7.16-24 16-24s16 10.75 16 24s-7.16 24-16 24Z" />
+          </svg></span> Lançar o dado
+      </button>
+
+      <button class="btn container--hold-score">
+        <span class="svg svg--hold-score"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img"
+            preserveAspectRatio="xMidYMid meet" viewBox="0 0 24 24">
+            <path fill="currentColor"
+              d="m19.74 8.33l-5.44-6a1 1 0 0 0-.74-.33h-7A2.53 2.53 0 0 0 4 4.5v15A2.53 2.53 0 0 0 6.56 22h10.88A2.53 2.53 0 0 0 20 19.5V9a1 1 0 0 0-.26-.67ZM14 5l2.74 3h-2a.79.79 0 0 1-.74-.85Zm3.44 15H6.56a.53.53 0 0 1-.56-.5v-15a.53.53 0 0 1 .56-.5H12v3.15A2.79 2.79 0 0 0 14.71 10H18v9.5a.53.53 0 0 1-.56.5Z" />
+            <path fill="currentColor"
+              d="M14 13h-1v-1a1 1 0 0 0-2 0v1h-1a1 1 0 0 0 0 2h1v1a1 1 0 0 0 2 0v-1h1a1 1 0 0 0 0-2Z" />
+          </svg></span> Salvar
+      </button>
+
+
+    </article>
+
+
+  </main>
+
+  <script src="sources/js/index.js"></script>
+</body>
+
+</html>

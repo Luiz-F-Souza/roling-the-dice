@@ -1,0 +1,14 @@
+{
+  "name": "roling-the-dice",
+  "version": "1.0.0",
+  "description": "A game that the goal its to have more points than the other one",
+  "main": "index.js",
+  "scripts": {
+    "init-sass": "sass styles/sass/index.scss styles/css/index.css -w"
+  },
+  "author": "Luiz Felipe de Souza Barbosa",
+  "license": "ISC",
+  "dependencies": {
+    "sass": "^1.51.0"
+  }
+}

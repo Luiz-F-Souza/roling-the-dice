@@ -1,0 +1,56 @@
+@media (max-width: 1050px) {
+ 
+  html{
+    font-size: 52.5%;
+  }
+  
+}
+
+@media (max-width: 870px) {
+ 
+  html{
+    font-size: 70.5%;
+  }
+  
+  .container--players-flex{
+  flex-direction: column;
+  
+ }
+
+ .full-score{
+  margin-bottom: .5rem !important;
+ }
+
+ .middle-btns-and-dice{
+  grid-template-columns: repeat(4,1fr);
+  column-gap: 2rem;
+ }
+}
+
+@media (max-width: 730px) {
+
+  html{
+    font-size: 45%;
+  }
+ 
+  
+}
+
+@media (max-width: 360px) {
+  html{
+    font-size: 42.5% ;
+  }
+}
+
+@media (max-width: 330px) {
+  html{
+    font-size: 39% ;
+  }
+}
+
+@media (max-width: 300px) {
+  html{
+    font-size: 33% ;
+  }
+}
+
